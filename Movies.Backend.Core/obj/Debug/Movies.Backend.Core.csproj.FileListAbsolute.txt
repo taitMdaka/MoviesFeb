@@ -1,0 +1,2 @@
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\Movies.Backend.Core\obj\Debug\Movies.Backend.Core.csprojResolveAssemblyReference.cache
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\Movies.Backend.Core\obj\Debug\Movies.Backend.Core.csproj.CoreCompileInputs.cache

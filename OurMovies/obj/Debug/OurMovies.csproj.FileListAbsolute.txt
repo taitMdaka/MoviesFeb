@@ -1,0 +1,17 @@
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\bin\Debug\OurMovies.dll.config
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\bin\Debug\OurMovies.dll
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\bin\Debug\OurMovies.pdb
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\bin\Debug\Autofac.dll
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\bin\Debug\EntityFramework.dll
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\bin\Debug\MediatR.dll
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\bin\Debug\Movies.Backend.Core.dll
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\bin\Debug\Movies.Backend.Core.pdb
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\bin\Debug\Movies.Backend.Core.dll.config
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\bin\Debug\Autofac.xml
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\bin\Debug\EntityFramework.xml
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\obj\Debug\OurMovies.csprojResolveAssemblyReference.cache
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\obj\Debug\OurMovies.csproj.CoreCompileInputs.cache
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\obj\Debug\OurMovies.dll
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\OurMovies\obj\Debug\OurMovies.pdb

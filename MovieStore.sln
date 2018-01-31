@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{157A4C07-F270-46A6-B54D-F474EBDF967A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Features", "Features", "{B606EFC8-F6ED-4786-9E99-935DBA8E7D37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{A24BEA24-147E-428C-8079-9191BF82E030}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{54CCCEF6-1264-4D0F-8252-31204F336136}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesBackendCore", "Movies.Backend.Core\MoviesBackendCore.csproj", "{57420B3C-41E9-46ED-83A7-CC93C0895A19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMediaFeature", "SocialMediaFeature\SocialMediaFeature.csproj", "{62829F0E-190E-4C88-B336-90F03CA239CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OurMovies", "OurMovies\OurMovies.csproj", "{1A47C17D-4411-4F68-AA53-4DBDFBAFD0A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tickets.Booking.Feature", "Tickets.Booking.Feature\Tickets.Booking.Feature.csproj", "{6C3509D4-8BC9-422A-A6C9-EC43E666151B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Test", "Movies.Test\Movies.Test.csproj", "{9E24CAFF-C845-40A0-BA02-6B2BD67F2022}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57420B3C-41E9-46ED-83A7-CC93C0895A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57420B3C-41E9-46ED-83A7-CC93C0895A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57420B3C-41E9-46ED-83A7-CC93C0895A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57420B3C-41E9-46ED-83A7-CC93C0895A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62829F0E-190E-4C88-B336-90F03CA239CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62829F0E-190E-4C88-B336-90F03CA239CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62829F0E-190E-4C88-B336-90F03CA239CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62829F0E-190E-4C88-B336-90F03CA239CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A47C17D-4411-4F68-AA53-4DBDFBAFD0A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A47C17D-4411-4F68-AA53-4DBDFBAFD0A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A47C17D-4411-4F68-AA53-4DBDFBAFD0A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A47C17D-4411-4F68-AA53-4DBDFBAFD0A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C3509D4-8BC9-422A-A6C9-EC43E666151B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C3509D4-8BC9-422A-A6C9-EC43E666151B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C3509D4-8BC9-422A-A6C9-EC43E666151B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C3509D4-8BC9-422A-A6C9-EC43E666151B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E24CAFF-C845-40A0-BA02-6B2BD67F2022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E24CAFF-C845-40A0-BA02-6B2BD67F2022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E24CAFF-C845-40A0-BA02-6B2BD67F2022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E24CAFF-C845-40A0-BA02-6B2BD67F2022}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{57420B3C-41E9-46ED-83A7-CC93C0895A19} = {A24BEA24-147E-428C-8079-9191BF82E030}
+		{62829F0E-190E-4C88-B336-90F03CA239CD} = {B606EFC8-F6ED-4786-9E99-935DBA8E7D37}
+		{1A47C17D-4411-4F68-AA53-4DBDFBAFD0A0} = {B606EFC8-F6ED-4786-9E99-935DBA8E7D37}
+		{6C3509D4-8BC9-422A-A6C9-EC43E666151B} = {B606EFC8-F6ED-4786-9E99-935DBA8E7D37}
+		{9E24CAFF-C845-40A0-BA02-6B2BD67F2022} = {54CCCEF6-1264-4D0F-8252-31204F336136}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A58FC502-BDEA-46FA-AED7-0BFAA208430B}
+	EndGlobalSection
+EndGlobal
