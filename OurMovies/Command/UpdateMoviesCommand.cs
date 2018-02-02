@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OurMovies.Query
+namespace OurMovies.Command
 {
-    public class ListMoviesQuery : CommandResultsBase, IRequest<MoviesViewModel>
+   public  class UpdateMoviesCommand : CommandResultsBase, IRequest<MoviesViewModel>
     {
         public int Id { get; set; }
         public string Title { get; set; }
@@ -18,3 +18,4 @@ namespace OurMovies.Query
         public bool IsDeleted { get; set; }
     }
 }
+

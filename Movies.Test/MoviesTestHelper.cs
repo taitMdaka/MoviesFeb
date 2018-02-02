@@ -32,8 +32,7 @@ namespace Movies.Test
         public static AddMoviesCommand GetInValidMovie()
         {
             return new AddMoviesCommand
-            {
-               
+            {               
             };
         }
 
