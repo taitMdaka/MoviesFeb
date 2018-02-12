@@ -60,6 +60,8 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Command\AddMoviesCommand.cs" />
     <Compile Include="Command\AddMoviesCommandHandler.cs" />
+    <Compile Include="Command\DeleteMoviesCommand.cs" />
+    <Compile Include="Command\DeleteMoviesCommandHandler.cs" />
     <Compile Include="Command\UpdateMoviesCommand.cs" />
     <Compile Include="Command\UpdateMoviesCommandHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
