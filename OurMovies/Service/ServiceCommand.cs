@@ -40,7 +40,7 @@ namespace OurMovies.Service
             else
 
             {
-                throw new Exception("Movie not found ");
+                throw new System.Exception("Movie not found ");
             }
         }
 
@@ -57,7 +57,7 @@ namespace OurMovies.Service
             }
             else
             {
-                throw new Exception("Testimony was not found!");
+                throw new System.Exception("Testimony was not found!");
             }
 
             return Movies;

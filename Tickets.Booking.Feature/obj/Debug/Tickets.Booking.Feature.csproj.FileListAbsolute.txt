@@ -1,0 +1,5 @@
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\Tickets.Booking.Feature\bin\Debug\Tickets.Booking.Feature.dll
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\Tickets.Booking.Feature\bin\Debug\Tickets.Booking.Feature.pdb
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\Tickets.Booking.Feature\obj\Debug\Tickets.Booking.Feature.csproj.CoreCompileInputs.cache
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\Tickets.Booking.Feature\obj\Debug\Tickets.Booking.Feature.dll
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\Tickets.Booking.Feature\obj\Debug\Tickets.Booking.Feature.pdb

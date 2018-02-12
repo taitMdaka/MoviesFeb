@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tickets.Booking.Feature", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Test", "Movies.Test\Movies.Test.csproj", "{9E24CAFF-C845-40A0-BA02-6B2BD67F2022}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{B6D5CFDE-A26F-408C-A240-016250ECA702}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesWeb", "MoviesWeb\MoviesWeb.csproj", "{AE66DD2D-E9B9-492B-8F56-8F21E20D2DF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,10 @@ Global
 		{9E24CAFF-C845-40A0-BA02-6B2BD67F2022}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E24CAFF-C845-40A0-BA02-6B2BD67F2022}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E24CAFF-C845-40A0-BA02-6B2BD67F2022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE66DD2D-E9B9-492B-8F56-8F21E20D2DF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE66DD2D-E9B9-492B-8F56-8F21E20D2DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE66DD2D-E9B9-492B-8F56-8F21E20D2DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE66DD2D-E9B9-492B-8F56-8F21E20D2DF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +65,7 @@ Global
 		{1A47C17D-4411-4F68-AA53-4DBDFBAFD0A0} = {B606EFC8-F6ED-4786-9E99-935DBA8E7D37}
 		{6C3509D4-8BC9-422A-A6C9-EC43E666151B} = {B606EFC8-F6ED-4786-9E99-935DBA8E7D37}
 		{9E24CAFF-C845-40A0-BA02-6B2BD67F2022} = {54CCCEF6-1264-4D0F-8252-31204F336136}
+		{AE66DD2D-E9B9-492B-8F56-8F21E20D2DF3} = {B6D5CFDE-A26F-408C-A240-016250ECA702}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A58FC502-BDEA-46FA-AED7-0BFAA208430B}

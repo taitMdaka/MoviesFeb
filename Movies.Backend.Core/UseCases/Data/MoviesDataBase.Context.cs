@@ -12,23 +12,24 @@ namespace Movies.Backend.Core.UseCases.Data
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+
     public partial class MoviesDataBase : DbContext
     {
-        internal object Exception;
+        private object exception;
 
         public MoviesDataBase()
             : base("name=MoviesDataBase")
         {
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
-    
+
         public virtual DbSet<Booking> Bookings { get; set; }
         public virtual DbSet<OurMovie> OurMovie { get; set; }
         public virtual DbSet<Exception> Exceptions { get; set; }
+        public object Exception1 { get => exception; set => exception = value; }
     }
 }
