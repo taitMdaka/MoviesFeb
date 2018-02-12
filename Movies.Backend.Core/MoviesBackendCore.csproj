@@ -64,6 +64,9 @@
     <Compile Include="Infrastructure\Const.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UseCases\Data\DbFactory.cs" />
+    <Compile Include="UseCases\Data\Exception.cs">
+      <DependentUpon>MoviesDataBase.tt</DependentUpon>
+    </Compile>
     <Compile Include="UseCases\Data\IDbFactory.cs" />
     <Compile Include="UseCases\Data\OurMovie.cs">
       <DependentUpon>MoviesDataBase.tt</DependentUpon>

@@ -16,7 +16,7 @@ namespace Movies.Backend.Core.UseCases.Data
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public Nullable<System.DateTime> ReleaseDate { get; set; }
+        public System.DateTime ReleaseDate { get; set; }
         public Nullable<int> RunningTime { get; set; }
         public Nullable<bool> IsDeleted { get; set; }
     }

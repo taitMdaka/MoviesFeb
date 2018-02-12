@@ -15,6 +15,8 @@ namespace Movies.Backend.Core.UseCases.Data
     
     public partial class MoviesDataBase : DbContext
     {
+        internal object Exception;
+
         public MoviesDataBase()
             : base("name=MoviesDataBase")
         {
@@ -27,5 +29,6 @@ namespace Movies.Backend.Core.UseCases.Data
     
         public virtual DbSet<Booking> Bookings { get; set; }
         public virtual DbSet<OurMovie> OurMovie { get; set; }
+        public virtual DbSet<Exception> Exceptions { get; set; }
     }
 }

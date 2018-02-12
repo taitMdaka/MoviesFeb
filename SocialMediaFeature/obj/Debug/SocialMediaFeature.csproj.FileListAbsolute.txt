@@ -1,5 +1,0 @@
-C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\SocialMediaFeature\bin\Debug\SocialMediaFeature.dll
-C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\SocialMediaFeature\bin\Debug\SocialMediaFeature.pdb
-C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\SocialMediaFeature\obj\Debug\SocialMediaFeature.csproj.CoreCompileInputs.cache
-C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\SocialMediaFeature\obj\Debug\SocialMediaFeature.dll
-C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\SocialMediaFeature\obj\Debug\SocialMediaFeature.pdb

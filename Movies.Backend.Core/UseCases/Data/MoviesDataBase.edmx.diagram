@@ -7,6 +7,7 @@
       <Diagram DiagramId="fd558163c4864be793cda91d7dffd72e" Name="Diagram1">
         <EntityTypeShape EntityType="MoviesStoreModel.Booking" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="MoviesStoreModel.OurMovie" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="MoviesStoreModel.Exception" Width="1.5" PointX="3.375" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
