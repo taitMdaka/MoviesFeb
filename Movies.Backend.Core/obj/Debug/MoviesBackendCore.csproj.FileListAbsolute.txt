@@ -8,6 +8,7 @@ C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\Movies.Backend.Cor
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\Movies.Backend.Core\bin\Debug\Autofac.xml
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\Movies.Backend.Core\bin\Debug\EntityFramework.xml
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\Movies.Backend.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\Movies.Backend.Core\obj\Debug\MoviesBackendCore.csprojResolveAssemblyReference.cache
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\Movies.Backend.Core\obj\Debug\MoviesBackendCore.csproj.CoreCompileInputs.cache
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\Movies.Backend.Core\obj\Debug\Movies.Backend.Core.dll
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\Movies.Backend.Core\obj\Debug\Movies.Backend.Core.pdb

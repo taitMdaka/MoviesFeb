@@ -14,10 +14,10 @@
 //{
 //    public class ListMoviesQueryHandler : QueryHandlerBase, IRequestHandler<ListMoviesQuery, List<MoviesViewModel>>
 //    {
-      
-//        public List<MoviesViewModel> Hander(ListMoviesQuery message)
+
+//        public ListMoviesQueryHandler<MoviesViewModel> Hander(ListMoviesQuery message)
 //        {
-      
+
 //            {
 //                string validateModel = message == null ? "Command model is null, bad request" : message.ValidateModel();
 //                if (string.IsNullOrEmpty(validateModel))
@@ -47,7 +47,8 @@
 
 
 //                }
-//        }   } 
+//            }
+//        }
 //    }
 //}
 
