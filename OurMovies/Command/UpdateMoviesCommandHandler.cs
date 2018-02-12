@@ -1,52 +1,58 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+
+using MediatR;
+using Movies.Backend.Core.UseCases.General;
+using OurMovies.Service;
+using OurMovies.ViewModel;
 
 namespace OurMovies.Command
 {
-    class UpdateMoviesCommandHandler
+    public class UpdateMoviesCommandHandler : CommandHandlerBase, IRequestHandler<UpdateMoviesCommand, MoviesViewModel>
     {
+        public MoviesViewModel Handle(UpdateMoviesCommand message)
+
+        {
+            try
+            {
+                string validateModel = message == null ? "Command model is null, bad request" : message.ValidateModel();
+                if (string.IsNullOrEmpty(validateModel))
+                {
+                    var commandService = new ServiceCommand();
+
+                    var movies = commandService.UpdateMovies(message.Id, message.Title, message.RunningTime, message.IsDeleted);
+
+                    commandService.SaveChanges();
+                    return new MoviesViewModel
+                    {
+                        Id = movies.Id,
+                        Title = movies.Title,
+                        ReleaseDate = (System.DateTime)movies.ReleaseDate,
+                        IsDeleted = (bool)movies.IsDeleted,
+                        RunningTime = (int)movies.RunningTime,
+
+
+                    };
+                }
+                throw new System.Exception(validateModel);
+            }
+            catch (System.Exception exc)
+            {
+
+                // var log = new ExceptionLog().Log(exc, message);
+
+                throw exc;
+            }
+        }
+
+        public MoviesViewModel Handler(UpdateMoviesCommand message)
+        {
+            throw new System.NotImplementedException();
+        }
     }
+
 }
 
-
-
-
-
-{
-    public class UpdateTestimonyCommandHandler : CommandHandlerBase, IRequestHandler<UpdateTestimonyCommand, TestimonyViewModel>
-{
-    public TestimonyViewModel Handle(UpdateTestimonyCommand message)
-
-    {
-        try
-        {
-            string validateModel = message == null ? "Command model is null, bad request" : message.ValidateModel();
-            if (string.IsNullOrEmpty(validateModel))
-            {
-                var commandService = new ServiceCommand();
-
-                var testimony = commandService.UpdateTestimony(message.Id, message.Name, message.Data, message.Show);
-
-                commandService.SaveChanges();
-                return new TestimonyViewModel
-                {
-                    Name = testimony.Name,
-                    Id = testimony.Id,
-                    Data = testimony.Data,
-                    CreatedDate = testimony.CreatedDate,
-                    Show = testimony.Show,
-                    fileID = testimony.FileID
-                };
-            }
-            throw new System.Exception(validateModel);
-        }
-        catch (System.Exception exc)
-        {
-
-            var log = new ExceptionLog().Log(exc, message);
-
-            throw exc;
-        }

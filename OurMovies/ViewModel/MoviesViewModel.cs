@@ -12,7 +12,7 @@ namespace OurMovies.ViewModel
 
         public int Id { get; set; }
         public string Title { get; set; }
-        public DateTime ReleaseDate { get; set; }
+        public System.DateTime ReleaseDate { get; set; }
         public int RunningTime { get; set; }
         public bool IsDeleted { get; set; }
 

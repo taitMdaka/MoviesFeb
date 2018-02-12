@@ -7,30 +7,23 @@ using System.Threading.Tasks;
 
 namespace OurMovies.Service
 {
+   
     public class ServiceQuery : ServiceQueryBase
     {
-    {
-
-    }
-}
-
-
-
-
-namespace Dayspring.Feature.Testimony.Service
-{
-    public class ServiceQuery : ServiceQueryBase
-    {
-        public Backend.Core.UseCases.Data.DB.Testimony GetTestimonyById(int testimonyId)
+        public Movies.Backend.Core.UseCases.Data.OurMovie  GetMoviesById(int Id)
         {
-            return DbContext.Testimonies.SingleOrDefault(u => u.Id == testimonyId);
+            return DbContext.OurMovie.SingleOrDefault(u => u.Id == Id);
         }
 
-        public IQueryable<Backend.Core.UseCases.Data.DB.Testimony> GetTestimonies()
+        public IQueryable<Movies.Backend.Core.UseCases.Data.OurMovie> ListMovies()
         {
-            return DbContext.Testimonies.Include("File").AsQueryable();
+            return DbContext.OurMovie.Include("File").AsQueryable();
         }
 
     }
 }
+
+
+
+
 

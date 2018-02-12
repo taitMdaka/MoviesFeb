@@ -28,7 +28,6 @@ namespace OurMovies.Service
             DbContext.OurMovie.Add(movies);
 
             return movies;
-
         }
 
         public void DeleteMovies(int Id)
@@ -51,7 +50,6 @@ namespace OurMovies.Service
             var Movies = DbContext.OurMovie.SingleOrDefault(t => t.Id == Id);
             if (Movies != null)
             {
-
 
                 Movies.Title = Title;
                 Movies.RunningTime = RunningTime;

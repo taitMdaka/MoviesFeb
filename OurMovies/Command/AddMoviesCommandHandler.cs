@@ -48,51 +48,7 @@ namespace OurMovies.Command
 
         }
 
-      
+
     }
 }
-    
-
-
-
-
-//namespace Dayspring.Feature.Testimony.Command
-//{
-//   // public class AddTestimonyCommandHandler : CommandHandlerBase, IRequestHandler<AddTestimonyCommand, TestimonyViewModel>
-//    {
-//        //public TestimonyViewModel Handle(AddTestimonyCommand message)
-//        {
-//            try
-//            {
-//                string validateModel = message == null ? "Command model is null, bad request" : message.ValidateModel();
-//                if (string.IsNullOrEmpty(validateModel))
-//                {
-//                    var commandService = new ServiceCommand();
-
-//                    var testimony = commandService.CreateTestimony(message.Name, message.Data, message.Show, message.FileID);
-
-//                    commandService.SaveChanges();
-//                    return new TestimonyViewModel
-//                    {
-//                        Name = testimony.Name,
-//                        Id = testimony.Id,
-//                        Data = testimony.Data,
-//                        CreatedDate = testimony.CreatedDate,
-//                        Show = testimony.Show,
-//                        fileID = testimony.FileID
-//                    };
-//                }
-//                throw new System.Exception(validateModel);
-//            }
-//            catch (System.Exception exc)
-//            {
-
-//                var log = new ExceptionLog().Log(exc, message);
-
-//                throw exc;
-//            }
-
-//        }
-//    }
-//}
 
