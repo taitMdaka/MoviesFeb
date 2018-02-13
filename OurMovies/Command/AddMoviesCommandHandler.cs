@@ -22,26 +22,26 @@ namespace OurMovies.Command
                 string validateModel = message == null ? "Command model is null, bad request" : message.ValidateModel();
                 if (string.IsNullOrEmpty(validateModel))
                 {
-                    var commandService = new ServiceCommand();
+                    var ServiceCommand = new ServiceCommand();
 
-                    var Movie = commandService.CreateMovie(message.Title, message.RunningTime, message.IsDeleted);
+                    var Movie = ServiceCommand.CreateMovies(message.Id,message.Title, message.RunningTime,message.ReleaseDate,message.IsDeleted);
 
-                    commandService.SaveChanges();
+                    ServiceCommand.SaveChanges();
                     return new MoviesViewModel
                     {
 
-                        Title = Movie.Title,
-                        IsDeleted = (bool)Movie.IsDeleted,
-                        RunningTime = (int)Movie.RunningTime
-
+                        
+                Id=message.Id,
+                Title = message.Title,
+                RunningTime =message.RunningTime,
+                ReleaseDate = message.ReleaseDate,
+                IsDeleted =message.IsDeleted
                     };
                 }
                 throw new System.Exception(validateModel);
             }
             catch (System.Exception exc)
             {
-
-
                 throw exc;
             }
 

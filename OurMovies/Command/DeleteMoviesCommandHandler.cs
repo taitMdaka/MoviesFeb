@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Movies.Backend.Core.Common;
 using Movies.Backend.Core.UseCases.General;
 using OurMovies.Service;
 using System;
@@ -31,8 +32,8 @@ namespace OurMovies.Command
             catch (System.Exception exc)
             {
 
-                //var log = new ExceptionLog().Log(exc, message);
-
+                var log = new ExceptionLog().Log(exc, message);
+                
                 throw exc;
             }
         }

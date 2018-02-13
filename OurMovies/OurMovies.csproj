@@ -64,6 +64,8 @@
     <Compile Include="Command\UpdateMoviesCommand.cs" />
     <Compile Include="Command\UpdateMoviesCommandHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query\GetMoviesById.cs" />
+    <Compile Include="Query\GetMoviesByIdHandler.cs" />
     <Compile Include="Query\ListMoviesQuery.cs" />
     <Compile Include="Query\ListMoviesQueryHandler.cs" />
     <Compile Include="Service\datetime.cs" />

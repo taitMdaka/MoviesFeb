@@ -14,14 +14,14 @@ namespace OurMovies.Service
 {
     public class ServiceCommand : Movies.Backend.Core.UseCases.ServiceCommandBase
     {
-        public Movies.Backend.Core.UseCases.Data.OurMovie CreateMovie(string Title, int RunningTime, bool IsDeleted)
+        public Movies.Backend.Core.UseCases.Data.OurMovie CreateMovies(int Id, string Title, int RunningTime,  DateTime ReleaseDate, bool IsDeleted)
         {
             var movies = new Movies.Backend.Core.UseCases.Data.OurMovie
             {
-
+                 Id=Id,
                 Title = Title,
                 RunningTime = RunningTime,
-                ReleaseDate = DateTime.Now,
+                ReleaseDate = ReleaseDate,
                 IsDeleted = IsDeleted
 
             };

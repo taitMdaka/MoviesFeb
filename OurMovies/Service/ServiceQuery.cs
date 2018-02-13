@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace OurMovies.Service
 {
-   
     public class ServiceQuery : ServiceQueryBase
     {
         public Movies.Backend.Core.UseCases.Data.OurMovie  GetMoviesById(int Id)
@@ -15,11 +14,10 @@ namespace OurMovies.Service
             return DbContext.OurMovie.SingleOrDefault(u => u.Id == Id);
         }
 
-        public IQueryable<Movies.Backend.Core.UseCases.Data.OurMovie> ListMovies()
+        public IList<Movies.Backend.Core.UseCases.Data.OurMovie>ListMovies()
         {
-            return DbContext.OurMovie.Include("File").AsQueryable();
+            return DbContext.OurMovie.ToList();
         }
-
     }
 }
 
