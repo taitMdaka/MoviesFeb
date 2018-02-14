@@ -1,9 +1,13 @@
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\obj\Debug\MoviesWeb.csprojResolveAssemblyReference.cache
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\obj\Debug\MoviesWeb.csproj.CoreCompileInputs.cache
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\ApplicationInsights.config
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\MoviesWeb.dll.config
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\MoviesWeb.dll
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\MoviesWeb.pdb
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\Antlr3.Runtime.dll
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\Autofac.dll
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\EntityFramework.dll
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\EntityFramework.SqlServer.dll
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\MediatR.dll
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\Microsoft.AI.DependencyCollector.dll
@@ -60,12 +64,13 @@ C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\Syst
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\System.Web.WebPages.dll
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\System.Web.WebPages.Razor.dll
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\WebGrease.dll
-C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\EntityFramework.dll
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\Movies.Backend.Core.pdb
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\Movies.Backend.Core.dll.config
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\OurMovies.pdb
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\OurMovies.dll.config
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\Autofac.xml
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\EntityFramework.xml
+C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\EntityFramework.SqlServer.xml
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\Microsoft.AspNetCore.Authorization.xml
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
@@ -109,8 +114,5 @@ C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\Micr
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\Microsoft.AI.Web.xml
-C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\bin\EntityFramework.xml
-C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\obj\Debug\MoviesWeb.csprojResolveAssemblyReference.cache
-C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\obj\Debug\MoviesWeb.csproj.CoreCompileInputs.cache
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\obj\Debug\MoviesWeb.dll
 C:\Users\TMdaka\Documents\GIT-HUB PROJECT\MyMovies\MovieStore\MoviesWeb\obj\Debug\MoviesWeb.pdb

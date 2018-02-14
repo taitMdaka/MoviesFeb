@@ -9,8 +9,9 @@ using System.Threading.Tasks;
 
 namespace OurMovies.Query
 {
-    public class ListMoviesQuery : CommandResultsBase, IRequest<MoviesViewModel>
+    public class ListMoviesQuery : CommandResultsBase, IRequest<List<MoviesViewModel>>
     {
+
         public int Id { get; set; }
         public string Title { get; set; }
         public DateTime ReleaseDate { get; set; }

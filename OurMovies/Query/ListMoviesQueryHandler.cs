@@ -1,56 +1,52 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Diagnostics;
-//using System.Linq;
-//using MediatR;
-//using System.IO;
-//using static System.Net.WebRequestMethods;
-//using Movies.Backend.Core.UseCases.General;
-//using OurMovies.Query;
-//using OurMovies.ViewModel;
-//using OurMovies.Service;
+﻿using System.Collections.Generic;
+using System.Linq;
+using MediatR;
+using OurMovies.Query;
+using OurMovies.ViewModel;
+using OurMovies.Service;
+using Movies.Backend.Core.Common;
+using Movies.Backend.Core.UseCases.General;
 
-//namespace OurMovies.Service
-//{
-//    public class ListMoviesQueryHandler : QueryHandlerBase, IRequestHandler<ListMoviesQuery, List<MoviesViewModel>>
-//    {
+namespace Dayspring.Feature.Testimony.Query
+{
+    
+     public class ListMoviesQueryHandler : QueryHandlerBase, IRequestHandler<ListMoviesQuery, List<MoviesViewModel>>
+    {
 
-//        public ListMoviesQueryHandler<MoviesViewModel> Hander(ListMoviesQuery message)
-//        {
+        public List<MoviesViewModel> Handle(ListMoviesQuery message)
+        {
+            try
+            {
+                string validateModel = message == null ? "Command model is null, bad request" : message.ValidateModel();
+                if (string.IsNullOrEmpty(validateModel))
+                {
+                    var ServiceQuery = new ServiceQuery();
+                    IList<Movies.Backend.Core.UseCases.Data.OurMovie> movies = ServiceQuery.ListMovies();
 
-//            {
-//                string validateModel = message == null ? "Command model is null, bad request" : message.ValidateModel();
-//                if (string.IsNullOrEmpty(validateModel))
-//                {
-//                    var queryService = new ServiceQuery();
-//                    IEnumerable<Movies.Backend.Core.UseCases.Data.OurMovie> movies = queryService.ListMovies();
+                    return movies.Select(t => new MoviesViewModel
+                    {
+                        Id = t.Id,
+                        Title = t.Title,
+                        ReleaseDate = t.ReleaseDate,
+                        RunningTime = (int)t.RunningTime,
+                        IsDeleted = (bool)t.IsDeleted
 
-//                    //if (!message.WithHiden)
-//                    //{
-//                    //    movies = movies.Where(t => t.Show);
-//                    //}
+                    }).ToList();
+                }
+                throw new System.Exception(validateModel);
+            }
+            catch (System.Exception exc)
+            {
 
-//                    //if (message.Limit != null)
-//                    //{
-//                    //    movies = movies.Take(message.Limit.Value);
-//                    //}
-//                    return movies.Select(t => new MoviesViewModel
-//                    {
+                var log = new ExceptionLog().Log(exc, message);
 
-//                        //Title = t.Title,
-//                        //RunningTime = t.RunningTime,
-//                        //IsDeleted = t.IsDeleted,
-//                        //ReleaseDate = t.ReleaseDate
+                throw exc;
+            }
+        }
 
-
-//                    }).ToList();
-
-
-//                }
-//            }
-//        }
-//    }
-//}
-
+       
+        
+    }
+    }
 
 
