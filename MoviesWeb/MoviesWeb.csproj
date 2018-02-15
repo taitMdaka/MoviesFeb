@@ -267,7 +267,7 @@
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\AdminPortal\AdminPortalAreaRegistration.cs" />
-    <Compile Include="Areas\AdminPortal\Controllers\API\MoviesController.cs" />
+    <Compile Include="Areas\AdminPortal\Controllers\API\OurMoviesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
