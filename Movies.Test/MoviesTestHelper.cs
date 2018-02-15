@@ -16,9 +16,9 @@ namespace Movies.Test
 
             return randomNumber;
         }
-        public static AddMoviesCommand GetValidMovie(bool IsDelete = true)
+        public static GetMoviesById GetValidMovie(bool IsDelete = true)
         {
-            return new AddMoviesCommand
+            return new GetMoviesById
             {
                 Title="tt",
                 //IsDeleted=false,
@@ -29,9 +29,9 @@ namespace Movies.Test
                   
             };
         }
-        public static AddMoviesCommand GetInValidMovie()
+        public static GetMoviesById GetInValidMovie()
         {
-            return new AddMoviesCommand
+            return new GetMoviesById
             {               
             };
         }

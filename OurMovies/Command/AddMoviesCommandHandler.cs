@@ -13,9 +13,9 @@ using System.Threading;
 
 namespace OurMovies.Command
 {
-    public class AddMoviesCommandHandler : CommandHandlerBase, IRequestHandler<AddMoviesCommand, MoviesViewModel>
+    public class AddMoviesCommandHandler : CommandHandlerBase, IRequestHandler<GetMoviesById, MoviesViewModel>
     {
-        public MoviesViewModel Handle(AddMoviesCommand message)
+        public MoviesViewModel Handle(GetMoviesById message)
         {
             try
             {

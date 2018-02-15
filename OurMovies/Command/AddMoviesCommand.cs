@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OurMovies.Command
 {
-    public class AddMoviesCommand : CommandResultsBase, IRequest<MoviesViewModel>
+    public class GetMoviesById : CommandResultsBase, IRequest<MoviesViewModel>
     {
 
         public int Id { get; set; }

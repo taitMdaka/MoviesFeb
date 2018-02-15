@@ -16,7 +16,7 @@ namespace Movies.Test
         public static IMediator SetupMediatr()
         {
             ContainerBuilder builder = new ContainerBuilder();
-            builder.RegisterAssemblyTypes(typeof(AddMoviesCommand).Assembly).AsImplementedInterfaces();
+            builder.RegisterAssemblyTypes(typeof(GetMoviesById).Assembly).AsImplementedInterfaces();
             return BootstrapMediatr.BuildMediator(builder);
 
         }
