@@ -268,6 +268,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\AdminPortal\AdminPortalAreaRegistration.cs" />
     <Compile Include="Areas\AdminPortal\Controllers\API\OurMoviesController.cs" />
+    <Compile Include="Areas\AdminPortal\Models\OurMoviesModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -275,7 +276,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\AdminPortal\App\OurMovies.Ctrl.js" />
+    <Content Include="Areas\AdminPortal\App\Controller\OurMovies.Ctrl.js" />
+    <Content Include="Areas\AdminPortal\App\Services\OurMoviesService.js" />
     <Content Include="Areas\AdminPortal\Services\OurMoviesService.js" />
     <Content Include="Areas\AdminPortal\App\App.js" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -321,7 +323,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\AdminPortal\Models\" />
     <Folder Include="Areas\AdminPortal\Views\Movies\" />
     <Folder Include="Areas\AdminPortal\Views\Shared\" />
     <Folder Include="Common\" />

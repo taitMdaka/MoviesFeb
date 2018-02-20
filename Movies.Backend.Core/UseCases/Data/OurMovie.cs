@@ -19,5 +19,8 @@ namespace Movies.Backend.Core.UseCases.Data
         public System.DateTime ReleaseDate { get; set; }
         public Nullable<int> RunningTime { get; set; }
         public Nullable<bool> IsDeleted { get; set; }
+        public string Rating { get; set; }
+        public string Discription { get; set; }
+        public Nullable<int> BookingId { get; set; }
     }
 }

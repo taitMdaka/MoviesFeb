@@ -37,6 +37,9 @@
           <Property Name="ReleaseDate" Type="date" Nullable="false" />
           <Property Name="RunningTime" Type="int" />
           <Property Name="IsDeleted" Type="bit" />
+          <Property Name="Rating" Type="varchar" MaxLength="10" />
+          <Property Name="Discription" Type="varchar" MaxLength="550" />
+          <Property Name="BookingId" Type="int" />
         </EntityType>
         <EntityContainer Name="MoviesStoreModelStoreContainer">
           <EntitySet Name="Bookings" EntityType="Self.Bookings" Schema="dbo" store:Type="Tables" />
@@ -70,7 +73,10 @@
           <Property Name="ReleaseDate" Type="DateTime" Precision="0" Nullable="false" />
           <Property Name="RunningTime" Type="Int32" />
           <Property Name="IsDeleted" Type="Boolean" />
-        </EntityType>
+          <Property Name="Rating" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Discription" Type="String" MaxLength="550" FixedLength="false" Unicode="false" />
+          <Property Name="BookingId" Type="Int32" />
+          </EntityType>
         <EntityType Name="Exception">
           <Key>
             <PropertyRef Name="ID" />
@@ -104,6 +110,9 @@
           <EntitySetMapping Name="OurMovie">
             <EntityTypeMapping TypeName="MoviesStoreModel.OurMovie">
               <MappingFragment StoreEntitySet="OurMovie">
+                <ScalarProperty Name="BookingId" ColumnName="BookingId" />
+                <ScalarProperty Name="Discription" ColumnName="Discription" />
+                <ScalarProperty Name="Rating" ColumnName="Rating" />
                 <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
                 <ScalarProperty Name="RunningTime" ColumnName="RunningTime" />
                 <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />
