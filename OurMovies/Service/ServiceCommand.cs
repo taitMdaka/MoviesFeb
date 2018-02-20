@@ -14,15 +14,19 @@ namespace OurMovies.Service
 {
     public class ServiceCommand : Movies.Backend.Core.UseCases.ServiceCommandBase
     {
-        public Movies.Backend.Core.UseCases.Data.OurMovie CreateMovies(int Id, string Title, int RunningTime,  DateTime ReleaseDate, bool IsDeleted)
+        public Movies.Backend.Core.UseCases.Data.OurMovie CreateMovies(int Id, string Title, int RunningTime, System.DateTime ReleaseDate, bool IsDeleted, string Rating, string Discription, int BookingId)
         {
             var movies = new Movies.Backend.Core.UseCases.Data.OurMovie
             {
-                 Id=Id,
+                Id = Id,
                 Title = Title,
                 RunningTime = RunningTime,
                 ReleaseDate = ReleaseDate,
-                IsDeleted = IsDeleted
+                IsDeleted = IsDeleted,
+                Rating = Rating,
+                Discription = Discription,
+                BookingId = BookingId
+
 
             };
             DbContext.OurMovie.Add(movies);
@@ -45,15 +49,21 @@ namespace OurMovies.Service
         }
 
 
-        public Movies.Backend.Core.UseCases.Data.OurMovie UpdateMovies(int Id, string Title, int RunningTime, bool IsDeleted)
+        public Movies.Backend.Core.UseCases.Data.OurMovie UpdateMovies(int Id, string Title, int RunningTime, System.DateTime ReleaseDate, bool IsDeleted,string Rating,string Discription, int BookingId)
         {
             var Movies = DbContext.OurMovie.SingleOrDefault(t => t.Id == Id);
             if (Movies != null)
             {
 
+                Movies.Id = Id;
                 Movies.Title = Title;
                 Movies.RunningTime = RunningTime;
                 Movies.IsDeleted = IsDeleted;
+                Movies.Discription = Discription;
+                Movies.BookingId = BookingId;
+                Movies.Rating = Rating;
+                Movies.ReleaseDate = ReleaseDate; 
+          
             }
             else
             {

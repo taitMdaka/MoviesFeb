@@ -28,6 +28,9 @@ namespace OurMovies.Query
                         ReleaseDate = movies.ReleaseDate,
                         RunningTime = (int)movies.RunningTime,
                         Title = movies.Title,
+                        Rating =movies.Rating,
+                        Discription=movies.Discription,
+                        BookingId=movies.BookingId
 
                     };
                 }

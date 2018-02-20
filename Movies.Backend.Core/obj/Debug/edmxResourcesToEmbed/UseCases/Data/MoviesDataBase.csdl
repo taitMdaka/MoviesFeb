@@ -23,6 +23,9 @@
     <Property Name="ReleaseDate" Type="DateTime" Precision="0" Nullable="false" />
     <Property Name="RunningTime" Type="Int32" />
     <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="Rating" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Discription" Type="String" MaxLength="550" FixedLength="false" Unicode="false" />
+    <Property Name="BookingId" Type="Int32" />
   </EntityType>
   <EntityType Name="Exception">
     <Key>

@@ -9,8 +9,8 @@ using Movies.Backend.Core.UseCases.General;
 
 namespace Dayspring.Feature.Testimony.Query
 {
-    
-     public class ListMoviesQueryHandler : QueryHandlerBase, IRequestHandler<ListMoviesQuery, List<MoviesViewModel>>
+
+    public class ListMoviesQueryHandler : QueryHandlerBase, IRequestHandler<ListMoviesQuery, List<MoviesViewModel>>
     {
 
         public List<MoviesViewModel> Handle(ListMoviesQuery message)
@@ -21,7 +21,7 @@ namespace Dayspring.Feature.Testimony.Query
                 if (string.IsNullOrEmpty(validateModel))
                 {
                     var ServiceQuery = new ServiceQuery();
-                    IList<Movies.Backend.Core.UseCases.Data.OurMovie> movies = ServiceQuery.ListMovies();
+                    IEnumerable<Movies.Backend.Core.UseCases.Data.OurMovie> movies = ServiceQuery.ListMovies();
 
                     return movies.Select(t => new MoviesViewModel
                     {
@@ -29,7 +29,10 @@ namespace Dayspring.Feature.Testimony.Query
                         Title = t.Title,
                         ReleaseDate = t.ReleaseDate,
                         RunningTime = (int)t.RunningTime,
-                        IsDeleted = (bool)t.IsDeleted
+                        IsDeleted = (bool)t.IsDeleted,
+                        Discription = t.Discription,
+                        Rating = t.Rating,
+                        BookingId = t.BookingId
 
                     }).ToList();
                 }
@@ -43,10 +46,7 @@ namespace Dayspring.Feature.Testimony.Query
                 throw exc;
             }
         }
-
-       
-        
     }
-    }
+}
 
 

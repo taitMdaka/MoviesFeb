@@ -14,6 +14,9 @@
     <EntitySetMapping Name="OurMovie">
       <EntityTypeMapping TypeName="MoviesStoreModel.OurMovie">
         <MappingFragment StoreEntitySet="OurMovie">
+          <ScalarProperty Name="BookingId" ColumnName="BookingId" />
+          <ScalarProperty Name="Discription" ColumnName="Discription" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
           <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
           <ScalarProperty Name="RunningTime" ColumnName="RunningTime" />
           <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />

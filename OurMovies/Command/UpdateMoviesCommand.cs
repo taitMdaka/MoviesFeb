@@ -15,9 +15,12 @@ namespace OurMovies.Command
         [Required]
         public int Id { get; set; }
         public string Title { get; set; }
-        public DateTime ReleaseDate { get; set; }
-        public int RunningTime { get; set; }
-        public bool IsDeleted { get; set; }
+        public System.DateTime ReleaseDate { get; set; }
+        public Nullable<int> RunningTime { get; set; }
+        public Nullable<bool> IsDeleted { get; set; }
+        public string Rating { get; set; }
+        public string Discription { get; set; }
+        public Nullable<int> BookingId { get; set; }
     }
 }
 

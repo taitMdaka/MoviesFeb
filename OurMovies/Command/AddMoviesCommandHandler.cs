@@ -24,18 +24,21 @@ namespace OurMovies.Command
                 {
                     var ServiceCommand = new ServiceCommand();
 
-                    var Movie = ServiceCommand.CreateMovies(message.Id,message.Title, message.RunningTime,message.ReleaseDate,message.IsDeleted);
+                    var Movie = ServiceCommand.CreateMovies(message.Id, message.Title,(int) message.RunningTime,message.ReleaseDate,(bool) message.IsDeleted,message.Rating,message.Discription,(int)message.BookingId);
 
                     ServiceCommand.SaveChanges();
                     return new MoviesViewModel
                     {
 
-                        
-                Id=message.Id,
-                Title = message.Title,
-                RunningTime =message.RunningTime,
-                ReleaseDate = message.ReleaseDate,
-                IsDeleted =message.IsDeleted
+                        Id = message.Id,
+                        Title = message.Title,
+                        RunningTime = message.RunningTime,
+                        ReleaseDate = message.ReleaseDate,
+                        IsDeleted = message.IsDeleted,
+                        Rating = message.Rating,
+                        Discription = message.Discription,
+                        BookingId=message.BookingId
+
                     };
                 }
                 throw new System.Exception(validateModel);
@@ -44,11 +47,7 @@ namespace OurMovies.Command
             {
                 throw exc;
             }
-
-
         }
-
 
     }
 }
-

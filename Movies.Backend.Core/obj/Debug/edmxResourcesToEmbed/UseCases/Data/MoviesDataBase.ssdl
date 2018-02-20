@@ -32,6 +32,9 @@
     <Property Name="ReleaseDate" Type="date" Nullable="false" />
     <Property Name="RunningTime" Type="int" />
     <Property Name="IsDeleted" Type="bit" />
+    <Property Name="Rating" Type="varchar" MaxLength="10" />
+    <Property Name="Discription" Type="varchar" MaxLength="550" />
+    <Property Name="BookingId" Type="int" />
   </EntityType>
   <EntityContainer Name="MoviesStoreModelStoreContainer">
     <EntitySet Name="Bookings" EntityType="Self.Bookings" Schema="dbo" store:Type="Tables" />
